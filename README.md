@@ -1,8 +1,12 @@
 
-# Taskwarrior for Docker [![Docker Pulls](https://img.shields.io/docker/pulls/lukd/taskwarrior.svg)](https://hub.docker.com/r/lukd/taskwarrior/)
+# Taskwarrior for Docker
 
 This is a docker image for the Taskwarrior
 [Taskserver](https://github.com/GothenburgBitFactory/taskserver).
+
+This is a fork of [lukasdietrich/taskwarrior-docker](https://github.com/lukasdietrich/taskwarrior-docker)
+that I am customizing for my own use, with added kubernetes config files
+modified from [lenalebt's gist](https://gist.github.com/lenalebt/8d60784ad01f209c66cb5c52b8c0091d).
 
 ## Docker-Compose
 
@@ -28,12 +32,6 @@ services:
 
     volumes:
       - "./volumes/data:/data"
-```
-
-## Setup
-
-```sh
-$ docker exec -it taskwarrior /bin/sh
 ```
 
 ### Add Org + User
