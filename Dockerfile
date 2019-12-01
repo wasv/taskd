@@ -1,5 +1,5 @@
 FROM alpine:latest
-LABEL maintainer="Lukas Dietrich <lukas@lukasdietrich.com>"
+LABEL maintainer="Billy Stevens <contact@wasv.me>, Lukas Dietrich <lukas@lukasdietrich.com>"
 
 RUN apk --no-cache add taskd taskd-pki
 
